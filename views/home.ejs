@@ -1,0 +1,20 @@
+<%- include('partials/header') -%>
+
+<h1>Home</h1>
+
+
+<p> <%= homePara %></p>
+<% pots.forEach((para)=>{  %>
+    
+    
+  <h2> <%= para.titleContent %> </h2>
+
+  <p> <%= para.paraContent.substring(0,100) + '...' %> <a href="posts/<%= para.titleContent  %>">Read More</a> </p>
+  <%  console.log(para.titleContent) %>
+      
+  <%  }) %>
+
+
+
+
+<%- include('partials/footer') -%>
